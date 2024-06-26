@@ -8,7 +8,6 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.muham.mylibrary"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
