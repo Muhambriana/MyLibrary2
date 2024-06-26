@@ -35,6 +35,19 @@ android {
     }
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components.findByName("release"))
+                groupId = "com.github.Muhambriana"
+                artifactId = "test-lib-kocak"
+                version = "1.0.4"
+            }
+        }
+    }
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
