@@ -41,7 +41,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 from (components.findByName("release"))
                 groupId = "com.github.Muhambriana"
-                artifactId = "test-lib-kocak"
+                artifactId = "MyLibrary"
                 version = "1.0.4"
             }
         }
